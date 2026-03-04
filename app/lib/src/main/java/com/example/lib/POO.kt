@@ -68,17 +68,17 @@ class Eagle : Ave {
     }
 }
 
-open class Animal(val name : String) {
+open class Animal1(val name : String) {
     open fun makeSound() {
         println("$name está haciendo un sonido")
     }
 }
 
-class Dog : Animal(name = "Solovino") {
+class Dog : Animal1(name = "Solovino") {
 
 }
 
-class Cat(val catName : String) : Animal(name = catName){
+class Cat(val catName : String) : Animal1(name = catName){
     fun trepar(stairs : Int, place: String) {
         println("$name trepo $stairs escalones en $place")
     }
@@ -87,7 +87,7 @@ class Cat(val catName : String) : Animal(name = catName){
 fun main() {
     val persona = Person(name="Victor Tavares", age = 19)
     val persona2 = Person(age = 19, name = "Victor Tovares")
-    val animal = Animal("Animal generico")
+    val animal = Animal1("Animal generico")
     val cat = Cat("Coco")
     cat.trepar(3,"La Salle")
     persona.sayHello()
