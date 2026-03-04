@@ -18,7 +18,7 @@ fun main() {
 
         // TODO: Mientras numero > 0:
         // - suma el ultimo digito (numero % 10)
-        // - reduce numero (numero / 10)
+        // - raduzca usted el numero (numero / 10)
         while (numero > 0) {
             // Completa aqui
             suma += numero % 10
